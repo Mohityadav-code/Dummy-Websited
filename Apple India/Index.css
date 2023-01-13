@@ -1,0 +1,271 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.nav {
+    width: 100%;
+    position: fixed;
+    height: 60px;
+    background: rgba(42, 42, 42, 0.826);
+    backdrop-filter: saturation(120%);
+    backdrop-filter: blur(20px);
+}
+
+.flex {
+    height: 60px;
+    display: flex;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-weight: 200;
+    align-items: center;
+}
+
+@media only screen and (min-width: 1233px) {
+    .flex {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hideitbefore {
+        display: none;
+    }
+    .first .title1 .iphone-title a {
+        font-size: 80px;
+      }
+    
+}
+
+@media only screen and (max-width: 1233px) {
+    .flex {
+        display: flex;
+        justify-content: space-between;
+        background: rgb(52, 52, 188);
+
+    }
+
+    .removethis-media {
+        display: none;
+
+    }
+    .first .title1 .iphone-image img{
+        width: 375px;
+      }
+      .second .title1 .iphone-image2 img{
+        width: 375px;
+      }
+      .third .title1 .iphone-image2 img{
+        width: 375px;
+      }
+
+      .first .title1 .iphone-title a {
+        font-size: 58px;
+      }
+}
+
+.flex a {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.flex a svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* OFFER */
+.offer {
+    width: 100%;
+    background: white;
+    width: 100%;
+    font-weight: 100;
+    padding-top: 60px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    animation: ribbon-drop 3s 1 linear;
+}
+
+@keyframes ribbon-drop {
+    0% {
+        background: rgb(0, 125, 250);
+    }
+
+    100% {
+        background: rgba(0, 128, 255, 0);
+        ;
+    }
+}
+
+.offer a {
+    text-decoration: none;
+    color: #06c;
+    padding-left: 10px;
+}
+
+/*  Titles */
+.first .title1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 0, 0);
+}
+
+.first .title1 .iphone-title a {
+    /* font-size: 80px; */
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.first .title1 .iphone-subtitle a {
+    color: white;
+    font-size: 45px;
+    text-decoration: none;
+}
+
+.first .title1 .highlight a {
+    margin-top: 30px;
+    display: flex;
+    width: 180px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    border: white 1px solid;
+    border-radius: 25px;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: lighter;
+    padding: 2px 0px 2px 0px;
+}
+
+.first .title1 .iphone-links nav {
+    margin-top: 40px;
+}
+
+.first .title1 .iphone-links nav a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #2997ff;
+    font-weight: 300;
+    padding-right: 40px;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.second .title1 {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+
+}
+.second .title1 .iphone-title a {
+    font-size: 80px;
+    text-decoration: none;
+    color: rgb(7, 0, 0);
+    font-weight: 600;
+}
+.second .title1 .iphone-title a svg {
+    font-size: 100px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 620;
+}
+
+.second .title1 .iphone-subtitle a {
+    color: rgb(0, 0, 0);
+    font-size: 45px;
+    text-decoration: none;
+}
+
+.second .title1 .highlight a {
+    margin-top: 30px;
+    display: flex;
+    width: 180px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    border: rgb(0, 0, 0) 1px solid;
+    border-radius: 25px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: lighter;
+    padding: 2px 0px 2px 0px;
+}
+
+.second .title1 .iphone-links nav {
+    margin-top: 40px;
+}
+
+.second .title1 .iphone-links nav a {
+    margin-top: 50px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #2997ff;
+    font-weight: 300;
+    padding-right: 40px;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.third .title1 {
+    margin: 0;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 0, 0);
+
+}
+
+.third .title1 .watch-title a {
+    font-size: 80px;
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+    font-weight: 620;
+}
+.third .title1 .watch-title svg{
+    width: 75px;
+    height: 75px;
+    color: white;
+    
+}
+
+.third .title1 .iphone-subtitle a {
+    color: rgb(249, 0, 0);
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.third .title1 .highlight a {
+margin: 0;
+
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-size: 38px;
+    font-weight: 600;
+
+}
+
+.third .title1 .iphone-links nav {
+    margin-top: 20px;
+}
+
+.third .title1 .iphone-links nav a {
+    margin-top: 50px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #2997ff;
+    font-weight: 300;
+    padding-right: 40px;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}

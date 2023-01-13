@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body {
+            background: black;
+        }
+
         * {
             padding: 0;
             margin: 0;
@@ -19,20 +23,40 @@
             height: 60px;
             background: rgba(42, 42, 42, 0.826);
             backdrop-filter: saturation(120%);
-            backdrop-filter: blur(20px)
+            backdrop-filter: blur(20px);
         }
-
+        
         .flex {
             height: 60px;
-            position: sticky;
             display: flex;
-            justify-content: space-evenly;
-            align-items: center;
             font-size: 18px;
             color: rgb(255, 255, 255);
-            padding-right: 300px;
-            padding-left: 300px;
             font-weight: 200;
+            align-items: center;
+        }
+        
+        @media only screen and (min-width: 1233px) {
+            .flex{
+                display: flex;
+                justify-content: center;
+            }
+            .hideitbefore {
+                display: none;
+            }
+        }
+        
+        @media only screen and (max-width: 1233px) {
+            .flex{
+                display: flex;
+                justify-content: space-between;
+                background: rgb(52, 52, 188);
+    
+            }
+            .removethis-media {
+                display: none;
+
+            }
+
         }
 
         .flex a {
@@ -47,7 +71,8 @@
 
         /* OFFER */
         .offer {
-            background: white;;
+            background: white;
+            width: 100%;
             font-weight: 100;
             padding-top: 60px;
             height: 55px;
@@ -56,15 +81,17 @@
             align-items: center;
             font-size: 18px;
 
-            animation: ribbon-drop 3s  1 linear;
+            animation: ribbon-drop 3s 1 linear;
         }
 
         @keyframes ribbon-drop {
             0% {
                 background: rgb(0, 125, 250);
             }
-            100%{
-                background: rgba(0, 125, 250, 0);;
+
+            100% {
+                background: rgba(0, 125, 250, 0);
+                ;
             }
         }
 
@@ -80,7 +107,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background: black;
+            background: rgb(0, 0, 0);
         }
 
         .title1 .iphone-title a {
@@ -96,7 +123,7 @@
             text-decoration: none;
         }
 
-        .title1 .highlight {
+        .title1 .highlight a {
             margin-top: 10px;
             display: flex;
             width: 180px;
@@ -125,21 +152,24 @@
             font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
         }
 
-        .black{
-            background: black;
-            height: 25px;
+        .iphone-image {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            background: wheat;
         }
-        /* .iphone img {
-            width: 100%;
-        } */
     </style>
 </head>
 
 <body>
     <div class="nav">
-
         <nav class="flex">
-            <a>
+            <a class="menu hideitbefore"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg></a>
+            <a class="apple-logo">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-apple"
                     viewBox="0 0 16 16">
                     <path
@@ -148,17 +178,17 @@
                         d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z" />
                 </svg>
             </a>
-            <a>Store</a>
-            <a>Mac</a>
-            <a>iPad</a>
-            <a>iPhone</a>
-            <a>Watch</a>
-            <a>Airpods</a>
-            <a>TV & Home</a>
-            <a>Only on Apple</a>
-            <a>Accessories</a>
-            <a>Support</a>
-            <a>
+            <a class="removethis-media">Store</a>
+            <a class="removethis-media">Mac</a>
+            <a class="removethis-media">iPad</a>
+            <a class="removethis-media">iPhone</a>
+            <a class="removethis-media">Watch</a>
+            <a class="removethis-media">Airpods</a>
+            <a class="removethis-media">TV & Home</a>
+            <a class="removethis-media">Only on Apple</a>
+            <a class="removethis-media">Accessories</a>
+            <a class="removethis-media">Support</a>
+            <a class="removethis-media">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
                     viewBox="0 0 16 16">
                     <path
@@ -166,16 +196,19 @@
                 </svg>
             </a>
             <!-- <a><img src="/Apple India/images/bag.svg" alt=""></a> -->
-            <a><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
-                    viewBox="0 0 16 16">
+            <a class="bag"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-cart" viewBox="0 0 16 16">
                     <path
                         d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
                 </svg></a>
         </nav>
     </div>
     <div class="offer">
-        Get up to ₹6000 instant savings on orders over ₹41900 with HDFC Bank credit cards. # Plus No Cost EMI from most
-        leading banks. # <a href="#"> Shop now :-) </a>
+        <p>
+
+            Get up to ₹6000 instant savings on orders over ₹41900 with HDFC Bank credit cards. # Plus No Cost EMI from most
+            leading banks. # <a href="#"> Shop now :-) </a>
+        </p>
     </div>
     <div class="title1">
         <div class="iphone-title">
@@ -185,7 +218,10 @@
             <a href="#">Pro. Beyond</a>
         </div>
         <div class="highlight">
-            With superfast 5G*
+            <a href="#">
+
+                With superfast 5G*
+            </a>
         </div>
         <div class="iphone-links">
             <nav>
@@ -193,14 +229,10 @@
                 <a href="#">Buy > </a>
             </nav>
         </div>
-        <div class="black">
-
+        <div class=" iphone-image">
+            <img src="/Apple India/images/Iphone 1st.png" alt="">
         </div>
 
-        <!-- <div class="iphone">
-            <img src="/Apple India/images/iphone back2.jpg" alt="">
-            <img src="/Apple India/images/iphone back.jpg" alt="">
-        </div> -->
 </body>
 
 </html>

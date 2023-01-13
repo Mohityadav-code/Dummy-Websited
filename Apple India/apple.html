@@ -10,7 +10,7 @@
         * {
             padding: 0;
             margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
         }
 
         .nav {
@@ -34,17 +34,20 @@
             padding-left: 300px;
             font-weight: 200;
         }
-        
+
         .flex a {
             padding-left: 20px;
             padding-right: 20px;
         }
-        
+
         .flex a svg {
             width: 20px;
             height: 20px;
         }
-        .offer{
+
+        /* OFFER */
+        .offer {
+            background: white;;
             font-weight: 100;
             padding-top: 60px;
             height: 55px;
@@ -52,16 +55,83 @@
             justify-content: center;
             align-items: center;
             font-size: 18px;
+
+            animation: ribbon-drop 3s  1 linear;
         }
-        .offer a{
+
+        @keyframes ribbon-drop {
+            0% {
+                background: rgb(0, 125, 250);
+            }
+            100%{
+                background: rgba(0, 125, 250, 0);;
+            }
+        }
+
+        .offer a {
             text-decoration: none;
             color: #06c;
             padding-left: 10px;
         }
-        
-        .iphone img {
-            width: 100%;
+
+        /*  Titles */
+        .title1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: black;
         }
+
+        .title1 .iphone-title a {
+            font-size: 80px;
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+        }
+
+        .title1 .iphone-subtitle a {
+            color: white;
+            font-size: 45px;
+            text-decoration: none;
+        }
+
+        .title1 .highlight {
+            margin-top: 10px;
+            display: flex;
+            width: 180px;
+            height: 30px;
+            align-items: center;
+            justify-content: center;
+            border: white 1px solid;
+            border-radius: 25px;
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+            font-weight: lighter;
+            padding: 2px 0px 2px 0px;
+        }
+
+        .title1 .iphone-links nav {
+            margin-top: 10px;
+        }
+
+        .title1 .iphone-links nav a {
+            text-decoration: none;
+            font-size: 25px;
+            color: #2997ff;
+            font-weight: 300;
+            padding-right: 40px;
+            font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+        }
+
+        .black{
+            background: black;
+            height: 25px;
+        }
+        /* .iphone img {
+            width: 100%;
+        } */
     </style>
 </head>
 
@@ -105,10 +175,32 @@
     </div>
     <div class="offer">
         Get up to ₹6000 instant savings on orders over ₹41900 with HDFC Bank credit cards. # Plus No Cost EMI from most
-        leading banks. #   <a href="#"> Shop now :-) </a> </div>
-    <div class="iphone">
-        <img src="/Apple India/images/iphone back2.jpg" alt="">
-        <img src="/Apple India/images/iphone back.jpg" alt="">
+        leading banks. # <a href="#"> Shop now :-) </a>
     </div>
+    <div class="title1">
+        <div class="iphone-title">
+            <a href="#">iPhone 14 Pro</a>
+        </div>
+        <div class="iphone-subtitle">
+            <a href="#">Pro. Beyond</a>
+        </div>
+        <div class="highlight">
+            With superfast 5G*
+        </div>
+        <div class="iphone-links">
+            <nav>
+                <a href="#">Learn More > </a>
+                <a href="#">Buy > </a>
+            </nav>
+        </div>
+        <div class="black">
+
+        </div>
+
+        <!-- <div class="iphone">
+            <img src="/Apple India/images/iphone back2.jpg" alt="">
+            <img src="/Apple India/images/iphone back.jpg" alt="">
+        </div> -->
 </body>
+
 </html>

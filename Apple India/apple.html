@@ -10,13 +10,18 @@
         * {
             padding: 0;
             margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
         }
-        .nav{padding: 0;
+
+        .nav {
             position: fixed;
             width: 100%;
-            background: rgba(0, 0, 0, 0.826);
+            height: 60px;
+            background: rgba(42, 42, 42, 0.826);
             backdrop-filter: saturation(120%);
-            backdrop-filter: blur(20px)   }
+            backdrop-filter: blur(20px)
+        }
+
         .flex {
             height: 60px;
             position: sticky;
@@ -24,21 +29,37 @@
             justify-content: space-evenly;
             align-items: center;
             font-size: 18px;
-            color: rgb(176, 176, 176);
+            color: rgb(255, 255, 255);
             padding-right: 300px;
             padding-left: 300px;
             font-weight: 200;
-            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
         }
-        .flex a{
+        
+        .flex a {
             padding-left: 20px;
             padding-right: 20px;
         }
+        
         .flex a svg {
             width: 20px;
             height: 20px;
         }
-        .iphone img{
+        .offer{
+            font-weight: 100;
+            padding-top: 60px;
+            height: 55px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+        }
+        .offer a{
+            text-decoration: none;
+            color: #06c;
+            padding-left: 10px;
+        }
+        
+        .iphone img {
             width: 100%;
         }
     </style>
@@ -46,7 +67,7 @@
 
 <body>
     <div class="nav">
-        
+
         <nav class="flex">
             <a>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-apple"
@@ -82,10 +103,12 @@
                 </svg></a>
         </nav>
     </div>
+    <div class="offer">
+        Get up to ₹6000 instant savings on orders over ₹41900 with HDFC Bank credit cards. # Plus No Cost EMI from most
+        leading banks. #   <a href="#"> Shop now :-) </a> </div>
     <div class="iphone">
         <img src="/Apple India/images/iphone back2.jpg" alt="">
         <img src="/Apple India/images/iphone back.jpg" alt="">
     </div>
 </body>
-
 </html>

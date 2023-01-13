@@ -1,0 +1,2 @@
+We can blur background using backdrop feature in css
+more clearance at flex box

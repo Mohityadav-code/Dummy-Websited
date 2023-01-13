@@ -1,0 +1,6 @@
+First Problem i faces is when i am applying position fixed on navigation bar then 
+the next div will be placed beneath it 
+how to fix it
+
+second Problem is >? can we usee "Learn More" ::after == $0 in an anchor tag to write Learn More > 
+refer to apple page and inspect

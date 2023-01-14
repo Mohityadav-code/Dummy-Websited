@@ -31,13 +31,18 @@ img {
     .hidethisafter{
         display: none;
     }
-    
+    .container-player .row .video-player video {
+        width: 100%;
+    }
 }
 @media (max-width: 1024px) {
     .hidethisbefore{
         display: none;
     }
 
+    .container-player .row .video-player video {
+        width: 152%;
+    }
 .sidebar {
     display: none;
 }
@@ -281,6 +286,7 @@ font-family:cursive
 .container-player .row .right-sidebar{
     flex-basis: 30%;
 }
-.container-player .row .video-player video{
-    width: 100%;
+.container-player .row .right-sidebar .list-container .vid-list .thumbnail {
+    width: 120%;
+    border-radius: 5px;
 }

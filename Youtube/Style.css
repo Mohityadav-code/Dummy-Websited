@@ -28,8 +28,16 @@ img {
         padding-top: 20px;
         padding-bottom: 20px;
     }
+    .hidethisafter{
+        display: none;
+    }
+    
 }
 @media (max-width: 1024px) {
+    .hidethisbefore{
+        display: none;
+    }
+
 .sidebar {
     display: none;
 }
@@ -256,4 +264,23 @@ font-family:cursive
     font-weight: 600;
     display: block;
     margin-bottom: 10px;
+}
+/* next page css */
+.container-player{
+    padding-left: 2%;
+  }
+.container-player .row{
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+  
+}
+.container-player .row .video-player{
+    flex-basis: 68%;
+}
+.container-player .row .right-sidebar{
+    flex-basis: 30%;
+}
+.container-player .row .video-player video{
+    width: 100%;
 }
